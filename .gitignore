@@ -1,0 +1,8 @@
+# Ignore Visual Studio build files
+bin/
+obj/
+*.user
+*.suo
+*.exe
+*.dll
+*.pdb
