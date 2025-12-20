@@ -1,28 +1,35 @@
 ﻿abstract class Property
 {
-    protected int price ;
+    protected int price;
     public int Price
     {
-        get {return price ;}
+        get { return price; }
         set
         {
             if (value >= 0)
             {
-                price = value ;
+                price = value;
             }
         }
     }
 
-    protected string owner {get; set;}
-
-    protected int phoneNumber {get; set;}
-
-    public Property(int price , string owner , int phoneNumber)
+    protected string owner;
+    public string Owner
     {
-        this.price = price; 
-        this.owner = owner;
-        this.phoneNumber = phoneNumber;
+        get { return owner; }
+        set { owner = value; }
     }
 
-    public abstract string Getinfo();
+    protected string phoneNumber;
+    public string PhoneNumber
+    {
+        get { return phoneNumber; }
+        set { phoneNumber = value; }
+    }
+
+    protected Property()
+    {
+    }
+
+    public abstract string GetInfo();
 }

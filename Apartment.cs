@@ -1,35 +1,48 @@
 class Apartment : Property
 {
-    public int Metrage {get; set;}
-    public int buildYear {get; set;}
-    public int tabaghe {get; set;}
-    public string buildingName {get; set;}
-    public string address {get; set;}
-    public int roomNumber {get; set;}
-    public bool parking {get; set;}
-    public bool anbary {get; set;}
-    public bool asansor {get; set;}
+    public int Metrage { get; set; }
+    public int BuildYear { get; set; }       
+    public int Tabaghe { get; set; }         
+    public string BuildingName { get; set; }
+    public string Address { get; set; }
+    public int RoomNumber { get; set; }
+    public bool Parking { get; set; }
+    public bool Anbary { get; set; }          
+    public bool Asansor { get; set; }         
 
-    public Apartment(int price, string owner, int phoneNumber,int metrage , int buildYear, int tabaghe, string buildingName , 
-    string address , int roomNumber , bool parking , bool anbary , bool asansor) 
-    : base(price, owner, phoneNumber)
+    public Apartment(int price, string owner, string phoneNumber,
+                     int metrage, int buildYear, int tabaghe, string buildingName,
+                     string address, int roomNumber, bool parking, bool anbary, bool asansor)
     {
-        this.Metrage= metrage;
-        this.buildYear = buildYear;
-        this.tabaghe =tabaghe;
-        this.buildingName = buildingName;
-        this.address = address;
-        this.roomNumber = roomNumber;
-        this.parking = parking;
-        this.anbary = anbary;
-        this.asansor =asansor;
+        this.Price = price;         
+        this.Owner = owner;
+        this.PhoneNumber = phoneNumber;
 
-
-
-    }
-        public override string Getinfo()
-    {
-        throw new NotImplementedException();
+        Metrage = metrage;
+        BuildYear = buildYear;
+        Tabaghe = tabaghe;
+        BuildingName = buildingName;
+        Address = address;
+        RoomNumber = roomNumber;
+        Parking = parking;
+        Anbary = anbary;
+        Asansor = asansor;
     }
 
+    public override string GetInfo()
+    {
+        return $"نوع: آپارتمان\n" +
+               $"قیمت: {Price} میلیون تومان\n" +
+               $"مالک: {Owner}\n" +
+               $"تلفن: {PhoneNumber}\n" +
+               $"متراژ: {Metrage} متر\n" +
+               $"سال ساخت: {BuildYear}\n" +
+               $"طبقه: {Tabaghe}\n" +
+               $"نام ساختمان: {BuildingName}\n" +
+               $"آدرس: {Address}\n" +
+               $"تعداد اتاق: {RoomNumber}\n" +
+               $"پارکینگ: {(Parking ? "دارد" : "ندارد")}\n" +
+               $"انباری: {(Anbary ? "دارد" : "ندارد")}\n" +
+               $"آسانسور: {(Asansor ? "دارد" : "دارد")}";
+    }
 }
