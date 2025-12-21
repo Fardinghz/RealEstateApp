@@ -7,7 +7,7 @@ class Villa : Property
     public string Address { get; set; }
     public bool Parking { get; set; }
 
-    public Villa(int price, string owner, string phoneNumber,
+    public Villa(string price, string owner, string phoneNumber,
                  int landMetrage, int buildingMetrage, int buildYear,
                  int roomNumber, string address, bool parking)
     {

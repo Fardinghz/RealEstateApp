@@ -10,7 +10,7 @@ class Apartment : Property
     public bool Anbary { get; set; }          
     public bool Asansor { get; set; }         
 
-    public Apartment(int price, string owner, string phoneNumber,
+    public Apartment(string price, string owner, string phoneNumber,
                      int metrage, int buildYear, int tabaghe, string buildingName,
                      string address, int roomNumber, bool parking, bool anbary, bool asansor)
     {

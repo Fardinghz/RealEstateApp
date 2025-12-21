@@ -1,12 +1,12 @@
 ﻿abstract class Property
 {
-    protected int price;
-    public int Price
+    protected string price;
+    public string Price
     {
         get { return price; }
         set
         {
-            if (value >= 0)
+            if (value != "0")
             {
                 price = value;
             }

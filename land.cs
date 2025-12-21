@@ -4,7 +4,7 @@ class Land : Property
     public bool Mojavez { get; set; }            
     public string Address { get; set; }
 
-    public Land(int price, string owner, string phoneNumber,
+    public Land(string price, string owner, string phoneNumber,
                 int metrage, bool mojavez, string address)
     {
         this.Price = price;             
