@@ -1,4 +1,4 @@
-// فایل: Database.cs  ← فقط کلاس دیتابیس، بدون Main
+
 using System;
 using MySqlConnector;
 
@@ -8,8 +8,7 @@ public static class Database
         "Server=localhost;" +
         "Database=realestate;" +
         "User=root;" +
-        "Password=;";  // رمز خودت
-
+        "Password=;";  
     public static void TestConnection()
     {
         try
