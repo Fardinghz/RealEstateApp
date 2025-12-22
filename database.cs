@@ -8,7 +8,7 @@ public static class Database
         "Server=localhost;" +
         "Database=realestate;" +
         "User=root;" +
-        "Password=93627475;";  // رمز خودت
+        "Password=;";  // رمز خودت
 
     public static void TestConnection()
     {
